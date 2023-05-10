@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+<script>
+    const num1 = Number(prompt("Insira um número INTEIRO").trim());
+    const num2 = Number(prompt("Insira outro número INTEIRO").trim());
+    const num3 = Number(prompt("Insira outro número INTEIRO").trim());
+    //SAÍDA
+    if(num1>num2 && num1>num3){
+        alert(`O ${num1} é o maior entre ambos`);
+    }
+    else if(num2>num1 && num2>num3){
+        alert(`O ${num2} é o maior entre ambos.`);
+    }
+    else if(num3>num2 && num3>num1){
+        alert(`O ${num3} é maior entre ambos.`);
+    }
+    else if(num1==num2 && num2==num3){
+        alert(`Ambos são iguais`);
+    }
+    else {
+        alert(`Esses valores não são validos`);
+    }
+</script>
