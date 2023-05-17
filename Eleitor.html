@@ -1,12 +1,21 @@
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 <script>
-//Entrada
-  const anoNascimento = Number (prompt("Ano de Nascimento:)"));
+  //Entrada
+  const anoNascimento = Number(prompt("Qual a sua idade?"));
   //Saída
-  if(new Date().getFullYear() - anoNascimento >= 16){
-    alert(`Você já pode votar`);
+  if (anoNascimento >= 16) {
+    const titulo = prompt("Você já possui Titulo de eleitor? S ou N")
+      .toLowerCase()
+      .trim();
+    if (titulo == "s") {
+      alert(`Você está apto a votar.`);
+    } else if (titulo == "n") {
+      alert(`Faça o seu título eleitoral.`);
+    } else {
+      alert(`Opção inválida`);
+    }
   }
-  else{
-    alert(`Você ainda não atingiu a idade`);
+  else if(anoNascimento<16){
+    alert(`Você não possui idade`)
   }
 </script>

@@ -1,10 +1,11 @@
 <meta charset="UTF-8">
 <script>
-    const num1 = Number(prompt("Insira um número INTEIRO").trim());
-    const num2 = Number(prompt("Insira outro número INTEIRO").trim());
-    const num3 = Number(prompt("Insira outro número INTEIRO").trim());
-    //SAÍDA
-    if(num1>num2 && num1>num3){
+    const num1 = (prompt("Insira um número INTEIRO").trim());
+    const num2 = (prompt("Insira outro número INTEIRO").trim());
+    const num3 = (prompt("Insira outro número INTEIRO").trim());
+    //PROCESSAMENTO 
+    if(!isNaN(num1) && !isNaN(num2) && !isNaN(num3)){
+        if(num1>num2 && num1>num3){
         alert(`O ${num1} é o maior entre ambos`);
     }
     else if(num2>num1 && num2>num3){
@@ -15,8 +16,8 @@
     }
     else if(num1==num2 && num2==num3){
         alert(`Ambos são iguais`);
-    }
-    else {
-        alert(`Esses valores não são validos`);
+    }}
+    else{
+        alert(`Valores invalidos`)
     }
 </script>
